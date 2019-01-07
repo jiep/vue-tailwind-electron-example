@@ -12,6 +12,9 @@
     "release": "vue-cli-service electron:build"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.7",
+    "@fortawesome/free-solid-svg-icons": "^5.4.2",
+    "@fortawesome/vue-fontawesome": "^0.1.1",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1"
   },
@@ -22,6 +25,7 @@
     "@vue/cli-service": "^3.0.5",
     "electron": "^3.0.0",
     "node-sass": "^4.9.4",
+    "postcss-import": "^12.0.1",
     "purgecss": "^1.1.0",
     "sass-loader": "^7.1.0",
     "tailwindcss": "^0.7.3",
@@ -41,18 +45,6 @@
     "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "tailwindcss": {},
-      "autoprefixer": {},
-      "@fullhuman/postcss-purgecss": {
-        "content": [
-          "./src/**/*.html",
-          "./src/**/*.vue"
-        ]
-      }
     }
   },
   "browserslist": [

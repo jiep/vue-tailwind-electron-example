@@ -1,11 +1,16 @@
 <template lang="pug">
-  div.h-screen.w-screen.bg-blue(id="app")
-    .content
+  .font-sans.antialiased.h-screen.flex.flex-col(id="app")
+    Bar.flex-shrink/
+    .flex-1.bg-grey-lighter.flex-auto
       router-view/
 </template>
 
 <script>
+import Bar from '@/components/Bar'
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    Bar
+  }
 }
 </script>
